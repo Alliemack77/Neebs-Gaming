@@ -1,0 +1,11 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
+
+body {
+    font-family: $ff-body;
+    font-size: $fs-400;
+    font-weight: $fw-300;
+    color: $clr-white;
+    background-color: $clr-black;
+}
+

@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+
+.flex {
+   display: flex;
+   gap: $gap;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+// equal columns
+.column {
+    flex: 1 1 100%;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+

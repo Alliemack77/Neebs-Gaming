@@ -1,0 +1,94 @@
+@use '../abstracts/colors' as *;
+
+/* Header */
+.primary-header {
+    @media (min-width: 35rem) {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        // background-image: url('../../images/logo-mini.png');
+        // background-position: center;
+        // background-size: cover;
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* Main navigation */
+.primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @media (max-width: 35rem) {
+        position: fixed;
+        inset: 0 0 0 30%;
+        z-index: 1000;
+        flex-direction: column;
+        background-color: rgba(41, 41, 41, 0.966);
+        padding: min(20rem, 10vh) 2rem;
+
+        &.underline-indicators > .active {
+            border: 0;
+        }
+
+        // for anything other than IE11, Firefox, 
+        @supports (backdrop-filter: blur(1rem)) {
+            background-color: transparentize($clr-logo , .95);
+            backdrop-filter: blur(1rem);
+        }
+    }
+
+    & a {
+        text-decoration: none;
+        color: $clr-white;
+    }
+
+}
+
+.underline-indicators > * {
+    padding: .75rem 0;
+    border-bottom: 2px solid transparent;
+    width: max-content;
+
+    &:hover,
+    &:focus {
+        border-bottom: 2px solid $logo-50;
+    }
+    
+    &:visited {
+        color: $clr-white;
+    }
+
+    &.active {
+        border-bottom: 2px solid $clr-logo;
+        
+        
+    }
+}
+
+/* Slider navigation dots */
+.dot-indicators > * {
+    padding: .5rem;
+    background-color: $white-75;
+    border: none;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    cursor: pointer;
+
+    &:hover, 
+    &:focus {
+        background-color: $white-50;
+    }
+    
+    &[aria-selected="true"] {
+        background-color: $clr-white;
+    }
+}
+
+
+
+
+

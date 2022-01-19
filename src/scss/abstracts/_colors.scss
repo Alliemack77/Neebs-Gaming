@@ -1,0 +1,46 @@
+/* Colors */
+$clr-black: hsl(0 0% 0%);
+$clr-white: hsl(0 0% 100%);
+$clr-logo: hsl(42, 99%, 58%);
+
+/* Shades */
+$black-25: transparentize($clr-black, .25);
+$white-25: transparentize($clr-white, .25);
+$logo-25: transparentize($clr-logo, .25);
+
+$black-50: transparentize($clr-black, .50);
+$white-50: transparentize($clr-white, .50);
+$logo-50: transparentize($clr-logo, .50);
+
+$black-75: transparentize($clr-black, .75);
+$white-75: transparentize($clr-white, .75);
+$logo-75: transparentize($clr-logo, .75);
+
+/* Background color utilities */
+.bg-black { background-color: $clr-black ; }
+.bg-white { background-color: $clr-white ; }
+.bg-logo { background-color: $clr-logo ; }
+
+/* Background utility shades */ 
+.bg-black-50 { background-color: transparentize($clr-black, .5); }
+.bg-white-50 { background-color: transparentize($clr-white, .5); }
+.bg-logo-50 { background-color: transparentize($clr-logo, .5); }
+
+/* Text color utilities */
+.text-black { color: $clr-black; }
+.text-white { color: $clr-white; }
+.text-logo { color: $clr-logo; }
+
+/* Text utility shades */ 
+.text-black-25 { color: transparentize($clr-black, .25); }
+.text-white-25 { color: transparentize($clr-white, .25); }
+.text-logo-25 { color: transparentize($clr-logo, .25); }
+
+.text-black-50 { color: transparentize($clr-black, .5); }
+.text-white-50 { color: transparentize($clr-white, .5); }
+.text-logo-50 { color: transparentize($clr-logo, .5); }
+
+.text-black-75 { color: transparentize($clr-black, .75); }
+.text-white-75 { color: transparentize($clr-white, .75); }
+.text-logo-75 { color: transparentize($clr-logo, .75); }
+

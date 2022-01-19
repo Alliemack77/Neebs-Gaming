@@ -1,0 +1,68 @@
+@use '../abstracts/colors' as *;
+
+.button {
+    display: inline-block;
+    padding: .45em 1.5em;
+    border-radius: 15px;
+    text-decoration: none;
+
+    &.outline {
+        box-shadow: 0 0 40px 40px $clr-black inset, 0 0 0 0 $clr-black;
+        border: solid 2px $clr-logo;
+        transition: all 150ms ease-in-out;
+
+        &:hover, 
+        &:focus {
+            box-shadow: 0 0 0 0 $clr-black inset, 0 0 10px 4px $clr-logo;
+        }
+    }
+
+    &.icon {
+        letter-spacing: 0px;
+        transition: all 280ms ease-in-out;
+
+        &:hover,
+        &:focus {
+            letter-spacing: 3.5px;
+        }
+
+        &::after, 
+        &::before {
+            content: "";
+            display: block;
+            position: relative;
+            width: 0%;
+            margin: 0 auto;
+            border: 1px solid rgba($color: $clr-logo, $alpha: 0);
+            border-radius: 15px;
+            //transition: all 280ms ease-in-out;
+        }
+
+        &::after { top: 10px} 
+        &::before { top: -10px}
+
+        &:hover::after, 
+        &:hover::before {
+            border-color: $clr-logo;
+            transition: width 350ms ease-in-out;
+            width: 100%;
+        }
+
+        &:hover::before {
+            top: -10px;
+        }
+
+        &:hover::after {
+            top: 10px;
+        }
+    }
+
+      
+}
+
+/* Social buttons */
+.social-buttons > *:hover {
+    color: $clr-logo;
+}
+
+
