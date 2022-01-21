@@ -1,10 +1,16 @@
 @use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
 
 .button {
     display: inline-block;
     padding: .45em 1.5em;
+    border: none;
     border-radius: 15px;
     text-decoration: none;
+    background-color: $clr-black;
+    color: $clr-logo;
+    font-size: $fs-500;
+    font-weight: $fw-500;
 
     &.outline {
         box-shadow: 0 0 40px 40px $clr-black inset, 0 0 0 0 $clr-black;
@@ -18,6 +24,9 @@
     }
 
     &.icon {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
         letter-spacing: 0px;
         transition: all 280ms ease-in-out;
 
@@ -26,43 +35,36 @@
             letter-spacing: 3.5px;
         }
 
-        &::after, 
-        &::before {
-            content: "";
-            display: block;
-            position: relative;
-            width: 0%;
-            margin: 0 auto;
-            border: 1px solid rgba($color: $clr-logo, $alpha: 0);
-            border-radius: 15px;
-            //transition: all 280ms ease-in-out;
-        }
+        // &::after, 
+        // &::before {
+        //     content: "";
+        //     display: block;
+        //     position: relative;
+        //     width: 0%;
+        //     margin: 0 auto;
+        //     border: 1px solid rgba($color: $clr-logo, $alpha: 0);
+        //     border-radius: 15px;
+        //     //transition: all 280ms ease-in-out;
+        // }
 
-        &::after { top: 10px} 
-        &::before { top: -10px}
+        // &::after { top: 10px} 
+        // &::before { top: -10px}
 
-        &:hover::after, 
-        &:hover::before {
-            border-color: $clr-logo;
-            transition: width 350ms ease-in-out;
-            width: 100%;
-        }
+        // &:hover::after, 
+        // &:hover::before {
+        //     border-color: $clr-logo;
+        //     transition: width 350ms ease-in-out;
+        //     width: 100%;
+        // }
 
-        &:hover::before {
-            top: -10px;
-        }
+        // &:hover::before {
+        //     top: -10px;
+        // }
 
-        &:hover::after {
-            top: 10px;
-        }
+        // &:hover::after {
+        //     top: 10px;
+        // }
     }
-
-      
-}
-
-/* Social buttons */
-.social-buttons > *:hover {
-    color: $clr-logo;
 }
 
 

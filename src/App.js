@@ -1,15 +1,14 @@
 import './scss/main.scss';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Home from './pages/Home';
 
 const App = () => {
     return (
         <>
             <Navbar />
+            <Home />
 
-            <div className="container">
-                <Hero />
-            </div>
+            
         </>
     )
 }

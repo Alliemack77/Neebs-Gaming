@@ -2,6 +2,10 @@
 
 /* Verticle flow */
 // selects any child element that has a directly adjacet sibiling (a sibling directly before it)
+.flow-xxs > * + * {
+    margin-top: $flow-space-xxs;
+}
+
 .flow-xs > * + * {
     margin-top: $flow-space-xs;
 }

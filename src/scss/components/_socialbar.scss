@@ -1,0 +1,9 @@
+@use '../abstracts/colors' as *;
+
+.social-bar {
+
+    & > *:hover {
+        color: $clr-logo;
+    }
+}
+

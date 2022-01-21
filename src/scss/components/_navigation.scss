@@ -1,16 +1,15 @@
 @use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
 
 /* Header */
 .primary-header {
-    @media (min-width: 35rem) {
-        justify-content: space-between;
-        align-items: center;
-    }
+    padding: $p-body;
+    margin: 0 auto;
+    max-width: 87.5rem; //1400px;
+    align-items: center;
+    justify-content: space-between;
 
     .logo {
-        // background-image: url('../../images/logo-mini.png');
-        // background-position: center;
-        // background-size: cover;
         height: 50px;
         width: 50px;
     }
@@ -25,14 +24,11 @@
     @media (max-width: 35rem) {
         position: fixed;
         inset: 0 0 0 30%;
-        z-index: 1000;
+        z-index: 100;
         flex-direction: column;
         background-color: rgba(41, 41, 41, 0.966);
         padding: min(20rem, 10vh) 2rem;
-
-        &.underline-indicators > .active {
-            border: 0;
-        }
+        transform: translateX(100%);
 
         // for anything other than IE11, Firefox, 
         @supports (backdrop-filter: blur(1rem)) {
@@ -48,6 +44,40 @@
 
 }
 
+/* Hamburger */ 
+.mobile-nav-toggle {
+    border: none;
+    display: none;
+    position: absolute;
+    background: transparent;
+    background-image: url(../../images/hamburger.png);
+    background-repeat: no-repeat;
+    top: 2.85em;
+    right: 2em;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    z-index: 2000;
+    cursor: pointer;
+    transition: transform 250ms ease-in-out ;
+
+    @media (max-width: 35rem) {
+        display: block;
+    }
+}
+
+.nav-open .primary-navigation {
+    transform: translateX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.nav-open .mobile-nav-toggle {
+    background-image: url('../../images/nav-toggle-close.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+
+/* Hover styles */
 .underline-indicators > * {
     padding: .75rem 0;
     border-bottom: 2px solid transparent;
@@ -64,8 +94,10 @@
 
     &.active {
         border-bottom: 2px solid $clr-logo;
-        
-        
+
+        @media (max-width: 35rem) {
+            border: 0;
+        }
     }
 }
 
@@ -87,6 +119,7 @@
         background-color: $clr-white;
     }
 }
+
 
 
 

@@ -2,6 +2,7 @@
 $gap: 2rem;
 
 /*  Flow */
+$flow-space-xxs: .5rem;
 $flow-space-xs: 1rem;
 $flow-space-sm: 1.5rem; // 24px
 $flow-space-md: 2rem; // 32px
@@ -9,3 +10,12 @@ $flow-space-lg: 2.25rem; // 36px
 $flow-space-xl: 3rem; // 48px
 $flow-space-xxl: 4rem; // 64px
 $flow-space-xxxl: 8rem; // 128px
+
+/* Padding */
+$p-body: 2rem clamp(1rem, 4vw, 3rem);
+
+/* Media Queries */
+$mq-375: 23.438rem; // 375px
+$mq-768: 48rem; // 768px
+$mq-1000: 62.5rem; // 1000px
+$mq-1440: 90rem; // 1440px
