@@ -1,5 +1,5 @@
-import Button from '../components/Button';
-import SocialBar from '../components/Socialbar';
+import Button from '../../../components/Button';
+import SocialBar from '../../../components/Socialbar';
 
 
 const Hero = () => {

@@ -4,14 +4,17 @@
 /* Header */
 .primary-header {
     padding: $p-body;
-    margin: 0 auto;
-    max-width: 87.5rem; //1400px;
     align-items: center;
     justify-content: space-between;
 
     .logo {
         height: 50px;
         width: 50px;
+    }
+
+    @media (min-width: $mq-1000) {
+        position: fixed;
+        inset: 0 0 auto 0;
     }
 }
 

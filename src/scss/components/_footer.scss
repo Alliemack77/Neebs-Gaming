@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as *;
+
+footer.footer {
+    gap: 4.5rem;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: $mq-1000) {
+        align-items: flex-end;
+        text-align: right;
+    }
+}

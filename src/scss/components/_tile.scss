@@ -1,0 +1,34 @@
+@use '../abstracts/' as *;
+
+.tile {
+    max-width: 1400px;
+    // background-size: contain;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+   
+    & img, 
+    & > .iframe {
+        border-radius: 2rem;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    // @media (min-width: $mq-1000) {
+    //     display: grid;
+    //     grid-template-areas: 
+    //         ' img img img'
+    //         ' img img img'
+    //         ' img img img'
+    //         ' sub sub sub';
+
+    //     & img, 
+    //     & > .iframe {
+    //         grid-area: img;
+    //     }
+
+    //     & .subtitle {
+    //         grid-area: sub;
+    //     }
+    // }
+}
+

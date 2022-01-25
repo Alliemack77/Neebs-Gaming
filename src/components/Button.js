@@ -1,4 +1,4 @@
-import {AiOutlineArrowRight} from "react-icons/ai"
+import {AiOutlineArrowRight} from 'react-icons/ai'
 
 
 const Button = ({
@@ -13,7 +13,8 @@ const Button = ({
                 className="button icon"
                 href={href}
                 style={style}
-                target='_blank'
+                target="_blank"
+                rel="noreferrer"
             >
                 {children || "icon"}
                 <AiOutlineArrowRight/>
@@ -26,7 +27,8 @@ const Button = ({
                 className="button outline"
                 href={href}
                 style={style}
-                target='_blank'
+                target="_blank"
+                rel="noreferrer"
             >
                 {children || "button"}
             </a>

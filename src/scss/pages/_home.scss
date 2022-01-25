@@ -1,0 +1,35 @@
+@use '../abstracts/variables' as *;
+
+.home {
+    border: solid red 2px;
+    padding: 2rem clamp(1rem, 4vw, 3rem) 2rem; 
+
+    & > * {
+        border: solid green 2px;
+    }
+
+    @media (min-width: $mq-1000) {
+        padding-top: 10rem;
+        // padding-bottom: 5rem;
+        height: 100vh;
+        display: flex;
+        gap: 2rem;
+        overflow-x: scroll;
+
+        
+        & > * {
+            // margin-block: auto;
+        }
+
+
+        & .hero, 
+        & .footer {
+            flex: 1 0 50%;
+            max-width: 1000px;
+        }
+
+        & > .tile {
+            flex: 0 0 100%;
+        }
+    }
+}
