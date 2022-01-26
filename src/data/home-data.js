@@ -22,5 +22,11 @@ export const homeData = [
         alt: "Neebs Gaming's Battlefield Friends series",
         link: "https://www.youtube.com/playlist?list=PL1Uou2DWH7IHyWIslDFXqjy9bj5fpcsT7"
     },
+    {
+        img: ark, 
+        subtitle: "Ark: Survival Evolved",
+        alt: "Neebs Gaming's Ark series",
+        link: "https://www.youtube.com/playlist?list=PL1Uou2DWH7IGLMNjsEI1SCqZezW_H5Z4q"
+    },
 ]
 

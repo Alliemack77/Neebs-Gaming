@@ -1,8 +1,9 @@
 @use '../abstracts/variables' as *;
 
 .hero {
-    gap: 7rem;
+    gap: clamp(4.5rem, 7vw, 7rem);
     align-items: center;
+    margin-bottom: 4rem;
     text-align: center;
 
     & > .flow-xs {
@@ -11,6 +12,7 @@
 
     @media (min-width:  $mq-1000 ) {
         align-items: flex-start;
+        margin-bottom: 0;
         text-align: left;
 
         & > .flow-xs {

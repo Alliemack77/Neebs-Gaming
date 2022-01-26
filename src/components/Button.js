@@ -3,7 +3,7 @@ import {AiOutlineArrowRight} from 'react-icons/ai'
 
 const Button = ({
     icon,
-    children, 
+    text, 
     href,
     style, 
 }) => {
@@ -16,7 +16,7 @@ const Button = ({
                 target="_blank"
                 rel="noreferrer"
             >
-                {children || "icon"}
+                {text || "icon"}
                 <AiOutlineArrowRight/>
             </a>
 
@@ -30,7 +30,7 @@ const Button = ({
                 target="_blank"
                 rel="noreferrer"
             >
-                {children || "button"}
+                {text || "button"}
             </a>
         )
     }
