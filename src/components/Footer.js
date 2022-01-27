@@ -4,7 +4,7 @@ const Footer = () => {
    return (
     <footer className="footer flex direction-column">
         <h2 className="fs-700">Contact Us</h2>
-        <div class="flow-md">
+        <div className="flow-md">
             <div>
                 <p className="fw-700">Hank and Jed Movie Pictures</p>
                 <p>P.O. BOX 12247</p>

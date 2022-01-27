@@ -4,7 +4,7 @@ const Tile = ({ img, subtitle, alt }) => {
         <>
             <div className="tile" style={{backgroundImage: "url(" + img + ")" }} alt={alt}></div>
             <div className="subtitle">
-                <p className="fs-500">{subtitle}</p>
+                <p className="fs-600">{subtitle}</p>
             </div>
         </>
     ) 
@@ -13,5 +13,3 @@ const Tile = ({ img, subtitle, alt }) => {
 
 export default Tile;
 
-{/* <img className="img" src={img} alt={alt}></img> */}
-// 

@@ -3,7 +3,6 @@
 @use '../abstracts/colors' as *;
 
 .tile {
-    // border: solid purple 2px;
     width: 100%;
     height: 100%;
     aspect-ratio: 16 / 9;
@@ -15,21 +14,22 @@
 
 .subtitle {
     color: $clr-white;
-    padding: 1rem 0 4rem;
-
+    margin: 1rem 0 5rem;
+    
     @media (min-width: $mq-1000) {
         display: grid;
         align-content: end;
         height: 100%;
-        padding: 4rem 5rem;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 23.85%, #030303 118.65%);
-        text-transform: uppercase;
-        font-weight: $fw-700;
+        margin: 0;
+        padding: 4rem 4.5rem;
+        border-radius: 2rem;
+        // text-transform: uppercase;
+        // font-weight: $fw-700;
         color: transparent;
-    
+        
         &:hover,
         &:focus {
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.466) 23.85%, #030303 118.65%);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 23.85%, #030303 118.65%);
             color: $clr-white;
         }
         

@@ -11,7 +11,7 @@ const Hero = () => {
                 <p className="body">We play Ark, 7 Days to Die, Battlefield and much more. If you like video games and world peace, </p>
             </div>
             <div>
-                <Button text="join the party" href="https://www.youtube.com/watch?v=HK3F4iT5ghE&t=399s" />
+                <Button text="join the party" href="https://www.youtube.com/channel/UCiufyZv8iRPTafTw0D4CvnQ" />
             </div>
             <SocialBar />
         </section>

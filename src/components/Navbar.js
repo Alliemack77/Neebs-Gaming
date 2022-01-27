@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import logo from '../images/logos/logo.png'
 
 // create toggle for active state
@@ -25,19 +25,19 @@ const Navbar = () => {
                 <nav>
                     <ul id="primary-navigation" className="primary-navigation underline-indicators flex">
                         <li onClick={() => setIsToggled(!isToggled)} className="active">
-                            <a className="fs-300 fw-400 uppercase" href="#">Home</a>
+                            <Link className="fs-300 fw-400 uppercase" to="/">Home</Link>
                         </li>
 
                         <li onClick={() => setIsToggled(!isToggled)}>
-                            <a className="fs-300 fw-400 uppercase" href="#">Merch</a>
+                            <Link className="fs-300 fw-400 uppercase" to="/merch">Merch</Link>
                         </li>
 
                         <li onClick={() => setIsToggled(!isToggled)}>
-                            <a className="fs-300 fw-400 uppercase" href="#">NG Live!</a>
+                            <Link className="fs-300 fw-400 uppercase" to="/nglive">NG Live!</Link>
                         </li>
                         
                         <li onClick={() => setIsToggled(!isToggled)}>
-                            <a className="fs-300 fw-400 uppercase" href="#">Crew</a>
+                            <Link className="fs-300 fw-400 uppercase" to="/crew">Crew</Link>
                         </li>
                     </ul>
                 </nav>

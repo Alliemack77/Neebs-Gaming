@@ -7,6 +7,7 @@ const Button = ({
     href,
     style, 
 }) => {
+
     if (icon) {
         return (
             <a
@@ -19,7 +20,7 @@ const Button = ({
                 {text || "icon"}
                 <AiOutlineArrowRight/>
             </a>
-
+    
         )
     } else {
         return (

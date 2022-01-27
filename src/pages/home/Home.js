@@ -5,13 +5,24 @@ import {homeData} from '../../data/home-data';
 
 
 const Home = () => {
+
+    const handleOnWheel = (e) => {
+        const amountLeft = e.deltaY;
+        const element = document.querySelector(".home");
+
+        element.scrollBy({
+            left: amountLeft, 
+        })
+
+    }
+
     return (
-        <div className="home">
+        <div className="home" onWheel={handleOnWheel}>
             <Hero />  
             {
                 homeData.map(item => {
                     return (
-                        <a href={item.link}>
+                        <a href={item.link} key={item.subtitle}>
                             <Tile {...item}/>
                         </a>
                     )

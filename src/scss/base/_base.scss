@@ -9,3 +9,22 @@ body {
     background-color: $clr-black;
 }
 
+::-webkit-scrollbar {
+    width: .5em;
+    height: .4em;
+}
+
+::-webkit-scrollbar-track {
+    background: $clr-black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $clr-logo;
+    border-radius: 2rem;
+}
+
+@supports (scrollbar-color: red blue) {
+    * {
+        scrollbar-color: $clr-logo $clr-black;
+    }
+}
