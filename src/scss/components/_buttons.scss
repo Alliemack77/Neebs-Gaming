@@ -11,6 +11,7 @@
     color: $clr-logo;
     font-size: $fs-500;
     font-weight: $fw-500;
+    cursor: pointer;
 
     &.outline {
         box-shadow: 0 0 40px 40px $clr-black inset, 0 0 0 0 $clr-black;

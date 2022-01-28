@@ -1,0 +1,21 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+.card {
+    max-width: 275px;
+
+    .image {
+        border-radius: 10px;
+    }
+
+    .details {
+        border: solid $clr-logo 2px; 
+        border-radius: 10px;
+        text-align: center;
+        padding: 2rem .55rem;
+
+        .title {
+            font-size: clamp(1rem, 2vw, 1.125rem);
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import Hero from './sections/Hero';
+import Hero from './Hero';
 import Tile from '../../components/Tile';
 import Footer from '../../components/Footer';
 import {homeData} from '../../data/home-data';
