@@ -1,6 +1,9 @@
 import baseballTee from '../images/merch/merchBaseballTee.jpg'
 import ladiesTee from '../images/merch/merchLadiesTee.jpg'
 import hoodie from '../images/merch/merchHoodie.jpg'
+import thicked from '../images/merch/gotThickedTshirt.jpg'
+import simonHead from '../images/merch/simonHeadTshirt.jpg'
+import prideTee from '../images/merch/ngPrideTee.jpg'
 
 
 export const merch = [
@@ -24,5 +27,26 @@ export const merch = [
         price: "$42",
         alt: "",
         href: "https://hankandjed.myspreadshop.com/neebs+gaming-A5d89e3f0b4b8c76e39240c06?productType=669&sellable=1nGz0xlpBEUaQY7dnLjk-669-30&appearance=2"
+    },
+    {
+        img: thicked, 
+        title: "Got Thick'd Tee",
+        price: "$25",
+        alt: "",
+        href: "https://www.designbyhumans.com/shop/t-shirt/men/got-thickd/1359433/"
+    },
+    {
+        img: simonHead, 
+        title: "Simon Head Tee",
+        price: "$25",
+        alt: "",
+        href: "https://www.designbyhumans.com/shop/t-shirt/men/simon-ark-head/971534/"
+    },
+    {
+        img: prideTee, 
+        title: "NG Pride Tee",
+        price: "$25",
+        alt: "",
+        href: "https://www.designbyhumans.com/shop/t-shirt/men/neebs-gaming-pride-shirts/1437961/"
     }
 ]

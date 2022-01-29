@@ -1,16 +1,9 @@
 @use '../abstracts/variables' as *;
 
 .merch {
-    // border: solid purple 2px;
-    display: flex;
-    flex-direction: column;
-    gap: 7rem;
-    height: 100%;
-  
-
-    .button-contianer {
-        align-self: center;
-    }
+    background-image: url('../../images/logos/bg-logo-lrg-opt.jpg');
+    background-position: center;
+    padding: 4rem 0;
 
     @media (min-width: $mq-1000) {
         margin-top: 6rem;
@@ -24,11 +17,17 @@
     flex-direction: column;
     align-items: center;
     gap: 7rem;
-    
 
     @media (min-width: $mq-768) {
         flex-direction: row;
         justify-content: space-between;
         gap: 2rem;
     }
+}
+
+.shop-link {
+    // border: solid green 2px;
+    background: black;
+    padding: 2rem 0 0;
+    margin-block-end: 10rem;
 }

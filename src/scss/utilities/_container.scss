@@ -5,16 +5,6 @@
     padding: $p-body; 
     margin-inline: auto;
     max-width: 87.5rem; //1400px
-    height: 100%;
-    
-    &.bg-gradient {
-        // border: solid purple 2px;
-        background-image: url('../../images/logos/bg-logo-lrg.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        // height: 90vh;
-
-    }
+  
 }
 

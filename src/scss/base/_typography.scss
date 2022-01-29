@@ -31,19 +31,14 @@
 /* Character spacing */
 .letter-spacing-1 { letter-spacing: 5px; }
 
-/* Random styles */
+/* Other styles */
 .uppercase { text-transform: uppercase;}
 
-.numbered-title { 
-    font-size: $fs-500;
-    margin-bottom: 1rem;
-    
-    span {
-        font-weight: $fw-700;
-        color: $white-75;
-        margin-right: .75em;
-    }
-    
+.heading { 
+    width: min-content;
+    font-size: 1.75rem;
+    border-bottom: solid 2px $logo-50;
+    margin-block-end: clamp(3rem, 5vw, 6rem);
 }
 
 

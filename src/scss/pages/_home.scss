@@ -75,6 +75,11 @@
 
             .subtitle {
                 text-align: left;
+
+                :hover, 
+                :focus {
+                    outline: none;
+                }
             }
         }
     }
