@@ -35,10 +35,10 @@
 .uppercase { text-transform: uppercase;}
 
 .heading { 
-    width: min-content;
+    display: inline;
     font-size: 1.75rem;
     border-bottom: solid 2px $logo-50;
-    margin-block-end: clamp(3rem, 5vw, 6rem);
+    // margin-bottom: clamp(5rem, 7vw, 8rem);
 }
 
 

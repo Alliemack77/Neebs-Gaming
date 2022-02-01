@@ -1,6 +1,6 @@
 import Button from './Button'
 
-const Card = ({img, title, price, alt, href}) => {
+const MerchCard = ({img, title, price, alt, href}) => {
     return (
     
         <div className="card flow-md">
@@ -17,4 +17,4 @@ const Card = ({img, title, price, alt, href}) => {
     )
 }
 
-export default Card;
+export default MerchCard;

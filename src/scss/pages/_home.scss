@@ -56,7 +56,7 @@
 
         > a {
             flex: 0 0 50%;
-            display: inline-grid;
+            display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             width: clamp(15rem, 40vw, 100rem);
