@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as *;
+
+
+
+.crew {
+    @media (min-width: $mq-1000) {
+        margin-top: 10rem;
+    }
+}

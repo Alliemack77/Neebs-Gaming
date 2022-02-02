@@ -19,7 +19,7 @@ const NGLive = () => {
                         events.slice(0, 1).map(event => {
                             let badgeText;
                             if (event.soldOut === true) {
-                                badgeText = "Sold Out!"
+                                badgeText = "Rescheduled"
                             }
                             
                             return (

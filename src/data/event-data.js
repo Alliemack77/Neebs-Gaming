@@ -1,6 +1,6 @@
 export const events = [
     {
-        date: "May 8th & 9th 2022",
+        date: "May 8th & 9th 2021",
         venue: "Thalian Hall", 
         city: "Wilmington, NC", 
         soldOut: true

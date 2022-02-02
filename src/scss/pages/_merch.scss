@@ -3,11 +3,11 @@
 .merch {
     background-image: url('../../images/logos/bg-logo-lrg-opt.jpg');
     background-position: center;
-    padding: 4rem 0;
+    // padding: 4rem 0;
 
     // used on every section top - make a mixin?
     @media (min-width: $mq-1000) {
-        margin-top: 6rem;
+        margin-top: 10rem;
     }
     
 }

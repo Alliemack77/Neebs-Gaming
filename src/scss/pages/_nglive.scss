@@ -2,11 +2,10 @@
 
 
 .ng-live {
-    // border: solid rebeccapurple 2px;
-
+    // padding: 4rem 0;
     // used on every section top - make a mixin?
     @media (min-width: $mq-1000) {
-        margin-top: 6rem;
+        margin-top: 10rem;
     }
 
     .latest-event {
@@ -24,15 +23,17 @@
         }
 
         .badge {
-            background-color: red;
+            background-color: #ff0000;
+            border: solid 3px white;
             border-radius: 10px;
             position: absolute;
             width: max-content;
             padding: .25rem .75rem;
-            top: 10%;
+            top: 25%;
+
             // right: 10%;
             transform: rotate(-45deg);
-            color: black;
+            color: white;
             align-self: end;
         }
 
@@ -56,7 +57,6 @@
 
 
 .bg-logo-mini {
-    // border: solid rebeccapurple 2px;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -65,7 +65,6 @@
 
     > img,
     > div {
-        // border: solid green 2px;
         grid-column: 1 / 3;
         grid-row: 1 / 3;
     }
@@ -76,7 +75,6 @@
 }
 
 .gallery {
-    // border: solid rebeccapurple 2px;
     text-align: center;
 
     .images {
@@ -96,15 +94,8 @@
 
     @media (min-width: $mq-768) {
         .images {
+            padding: 0 2rem;
             grid-template-columns: repeat(4, 1fr);
-            grid-auto-flow: dense;
-            // grid-template-rows: repeat(2, 1fr);
-            
-            // :nth-child(3),
-            // :nth-child(4) {
-            //     grid-column: span 2;
-            //     grid-row: span 2;
-            // }
         }
     }
 }

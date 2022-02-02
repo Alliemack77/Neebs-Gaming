@@ -6,6 +6,9 @@
 }
 
 .grid-col-span-2 {
-    grid-column: span 2;
-    grid-row: span 2;
+
+    @media (min-width: $mq-768) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
 }

@@ -3,6 +3,14 @@ $clr-black: hsl(0 0% 0%);
 $clr-white: hsl(0 0% 100%);
 $clr-logo: hsl(42, 99%, 58%);
 
+/* Crew Colors */
+$clr-appsro: #001cb8;
+$clr-neebs: hsl(136, 89%, 22%);
+$clr-dora: hsl(59, 89%, 46%);
+$clr-thick: hsl(267, 100%, 32%);
+$clr-simon: hsl(319, 82%, 42%);
+
+
 /* Shades */
 $black-25: transparentize($clr-black, .25);
 $white-25: transparentize($clr-white, .25);
@@ -43,4 +51,11 @@ $logo-75: transparentize($clr-logo, .75);
 .text-black-75 { color: transparentize($clr-black, .75); }
 .text-white-75 { color: transparentize($clr-white, .75); }
 .text-logo-75 { color: transparentize($clr-logo, .75); }
+
+/* Crew utility classes */
+.appsro { border-bottom: 7px solid $clr-appsro; }
+.neebs { border-bottom: 7px solid $clr-neebs; }
+.dora { border-bottom: 7px solid $clr-dora; }
+.thick { border-bottom: 7px solid $clr-thick; }
+.simon { border-bottom: 7px solid $clr-simon; }
 
