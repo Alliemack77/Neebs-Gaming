@@ -1,64 +1,90 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/variables' as *;
 
-
 .character-sheet {
     // border: solid green 2px;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: clamp(5rem, 7vw, 8rem); // can i make this utility class? needed for spacing below every heading
-
-    @media (min-width: 1175px) {
-        gap: 0;
-    }
-
-    .title {
-        padding-bottom: 1rem;
-        text-align: center;
+    max-width: 900px;
     
-        @media (min-width: 1105px) {
+    @media (min-width: $mq-1000) {
+        display: grid;
+        // gap: 2rem;
+        grid-auto-flow: column;
+        grid-auto-columns: 50%;
+    }
+    
+    .description {
+        // border: solid purple 2px;
+        grid-column: 1;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        
+        @media (min-width: $mq-1000) {
+            justify-self: right;
+            align-self: center;
+            margin: 0;
             text-align: left;
         }
+
+        .title {
+            padding-bottom: 1rem;
+        }
+
+        .attributes {
+            // border: solid brown 2px;
+            // max-width: fit-content;
+            // margin-inline: auto;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(100px, 1fr));
+            gap: .75rem;
+            padding-bottom: $flow-space-sm;
+        
+            > p {
+                // border: solid green 2px;
+                width: max-content;
+            }
+        
+            .attribute-score {
+                display: inline-block;
+                border: solid 1px $clr-logo;
+                border-radius: 10px;
+                width: min-content;
+                padding: .5rem 1rem;
+                margin-right: .75rem;
+            }
+        }
+
+        .skills {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        
+            .skills-list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
     }
 
-    .attributes {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(100px, 200px));
-        gap: 1.5rem;
-        padding-bottom: $flow-space-xl;
-    
-        > p {
-            width: max-content;
-        }
-    
-        .attribute {
-            display: inline-block;
-            border: solid 1px $clr-logo;
-            border-radius: 10px;
-            width: min-content;
-            padding: .5rem 1rem;
-            margin-right: .75rem;
-        }
-    }
-    
-    .skills {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        text-align: center;
-    
-        .skills-list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-    }
-
-    img {
+    .character-image {
+        // border: solid purple 2px;
+        height: 50vh;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
         object-fit: cover;
-        flex: 0 1 50%;
+        margin: 1rem 0;
+
+
+        @media (min-width: $mq-1000) {
+            margin: 0;
+            background-size: cover;
+            height: 100%;
+        }
     }
+
+
+  
 }
 
 

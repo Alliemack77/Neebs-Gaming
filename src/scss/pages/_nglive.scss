@@ -2,7 +2,8 @@
 
 
 .ng-live {
-    // padding: 4rem 0;
+    // border: solid red 2px;
+
     // used on every section top - make a mixin?
     @media (min-width: $mq-1000) {
         margin-top: 10rem;
@@ -76,6 +77,7 @@
 
 .gallery {
     text-align: center;
+    margin-bottom: 10rem;
 
     .images {
         justify-items: center;

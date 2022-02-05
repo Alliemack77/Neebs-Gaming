@@ -12,6 +12,11 @@
     
 }
 
+.merch:last-of-type {
+    // border: solid red 2px;
+    padding-top: 3rem;
+}
+
 .cards {
     display: flex;
     flex-direction: column;
@@ -31,3 +36,4 @@
     padding: 2rem 0 0;
     margin-block-end: 10rem;
 }
+

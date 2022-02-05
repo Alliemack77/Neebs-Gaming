@@ -82,7 +82,7 @@
 }
 
 /* Hover styles */
-.underline-indicators > * {
+.underline-indicators a {
     padding: .75rem 0;
     border-bottom: 2px solid transparent;
     width: max-content;
@@ -95,15 +95,17 @@
     &:visited {
         color: $clr-white;
     }
+}
 
-    &.active {
-        border-bottom: 2px solid $clr-logo;
+/* Active styles */
+.underline-indicators a.active {
+    border-bottom: 2px solid $clr-logo;
 
-        @media (max-width: 35rem) {
-            border: 0;
-        }
+    @media (max-width: 35rem) {
+        border: 0;
     }
 }
+
 
 /* Slider navigation dots */
 .dot-indicators > * {
