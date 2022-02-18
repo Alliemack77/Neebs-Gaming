@@ -1,13 +1,13 @@
-import fans5 from '../images/fans/fans5.jpg'
 import fansAllFive from '../images/fans/fans4.jpg'
-import fansAllFivePlusOne from '../images/fans/fansallfiveplusone.jpg'
-import fansGroup from '../images/fans/fansgroup.jpg'
-import fansIllustration from '../images/fans/fansillustration.jpg'
-import fanSingle from '../images/fans/fansingle.jpg'
-import fansRooftop from '../images/fans/fansrooftop.jpg'
-import fansSelfie from '../images/fans/fansselfie.jpg'
-import fansStreet from '../images/fans/fansstreet.jpg'
-import fansThickSelfie from '../images/fans/fansthickselfie.jpg'
+import fans5 from '../images/fans/fans5.jpg'
+import fansAllFivePlusOne from '../images/fans/fans6.jpg'
+import fansGroup from '../images/fans/fans7.jpg'
+import fansIllustration from '../images/fans/fans8.jpg'
+import fanSingle from '../images/fans/fans9.jpg'
+import fansRooftop from '../images/fans/fans10.jpg'
+import fansSelfie from '../images/fans/fans11.jpg'
+import fansStreet from '../images/fans/fans12.jpg'
+import fansThickSelfie from '../images/fans/fans13.jpg'
 
 
 export const gallery = [
