@@ -1,5 +1,5 @@
 import fans5 from '../images/fans/fans5.jpg'
-import fansAllFive from '../images/fans/fansallfive.jpg'
+import fansAllFive from '../images/fans/fans4.jpg'
 import fansAllFivePlusOne from '../images/fans/fansallfiveplusone.jpg'
 import fansGroup from '../images/fans/fansgroup.jpg'
 import fansIllustration from '../images/fans/fansillustration.jpg'
