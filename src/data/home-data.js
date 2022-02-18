@@ -1,6 +1,6 @@
-import ark from '../images/home/arkAll5.jpg';
-import sevenDays from '../images/home/7DAll5.jpg';
-import bFF from '../images/home/battlefieldAll5.jpg';
+import ark from '../images/home/ark.jpg';
+import sevenDays from '../images/home/7d.jpg';
+import bFF from '../images/home/battlefield.jpg';
 
 export const homeData = [
 

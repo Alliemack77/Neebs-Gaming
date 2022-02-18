@@ -1,8 +1,8 @@
-import appsro from '../images/crew/appsroHalf.png'
-import neebs from '../images/crew/neebsHalf.png'
-import dora from '../images/crew/doraHalf.png'
-import thick from '../images/crew/thickHalf.png'
-import simon from '../images/crew/simonHalf.png'
+import appsro from '../images/crew/appsro.png'
+import neebs from '../images/crew/neebs.png'
+import dora from '../images/crew/dora.png'
+import thick from '../images/crew/thick.png'
+import simon from '../images/crew/simon.png'
 
 
 export const crew = [
