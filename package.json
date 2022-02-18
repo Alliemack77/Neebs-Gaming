@@ -39,5 +39,8 @@
   },
   "devDependencies": {
     "sass": "^1.48.0"
+  },
+  "overrides": {
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
