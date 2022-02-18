@@ -107,24 +107,6 @@
 }
 
 
-/* Slider navigation dots */
-.dot-indicators > * {
-    padding: .5rem;
-    background-color: $white-75;
-    border: none;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    cursor: pointer;
-
-    &:hover, 
-    &:focus {
-        background-color: $white-50;
-    }
-    
-    &[aria-selected="true"] {
-        background-color: $clr-white;
-    }
-}
 
 
 

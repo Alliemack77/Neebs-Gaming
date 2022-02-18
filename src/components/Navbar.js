@@ -22,7 +22,7 @@ const Navbar = () => {
                     aria-controls="primary-navigation" 
                     onClick={() => setIsToggled(!isToggled)}>
 
-                    <span className='hamburger sr-only' aria-expanded={`${isToggled? true : false}`}></span>
+                    <span className='hamburger sr-only'></span>
                 </button>
                 
                 <nav>
