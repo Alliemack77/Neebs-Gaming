@@ -22,7 +22,7 @@ const Home = () => {
 
             <a className="tile-link" href="https://www.youtube.com/embed?max-results=1&controls=1&rel=0&listType=user_uploads&list=NeebsGaming">
                 <div className="tile">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed?max-results=1&controls=1&rel=0&listType=user_uploads&list=NeebsGaming" frameborder="0" allowfullscreen></iframe>
+                    <iframe title="The latest video from Neebs Gaming." width="100%" height="100%" src="https://www.youtube.com/embed?max-results=1&controls=1&rel=0&listType=user_uploads&list=NeebsGaming" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div className="subtitle">
                     <p className="fs-600">Watch our latest video</p>
