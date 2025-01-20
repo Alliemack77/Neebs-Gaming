@@ -20,7 +20,7 @@ const NGLive = () => {
                             events.slice(0, 1).map(event => {
                                 let badgeText;
                                 if (event.soldOut === true) {
-                                    badgeText = "Rescheduled"
+                                    badgeText = "Sold Out!"
                                 }
                                 
                                 return (
@@ -32,7 +32,7 @@ const NGLive = () => {
                                             <p className="fs-700">{event.venue}</p>
                                             <p className="fs-500">{event.city}</p>
                                         </div>
-                                        <Button text="buy tickets" href="https://www.thalianhall.org/"/>
+                                        <Button text="buy tickets" href="https://www.chandlercenter.org/events/neebs-gaming-live"/>
                                     </div>
                                 )
                             })

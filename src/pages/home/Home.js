@@ -18,7 +18,17 @@ const Home = () => {
 
     return (
         <main className="home" onWheel={handleOnWheel}>
-            <Hero />  
+            <Hero /> 
+
+            <a className="tile-link" href="https://www.youtube.com/embed?max-results=1&controls=1&rel=0&listType=user_uploads&list=NeebsGaming">
+                <div className="tile">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed?max-results=1&controls=1&rel=0&listType=user_uploads&list=NeebsGaming" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div className="subtitle">
+                    <p className="fs-600">Watch our latest video</p>
+                </div>         
+            </a>
+
             {
                 homeData.map(item => {
                     return (

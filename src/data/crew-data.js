@@ -45,7 +45,7 @@ export const crew = [
         scores: [8, 7, 4, 6, 8, 9],
         wielding: ["confidence", "grenades", "axes"],
         skills: ["looting", "flying", "metal-work"],
-        immunity: ["humily", "wyverns", "cancer"], 
+        immunity: ["humility", "wyverns", "cancer"], 
     },
     {
         character: "Simon", 

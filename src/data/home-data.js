@@ -4,15 +4,11 @@ import bFF from '../images/home/battlefield.jpg';
 
 export const homeData = [
 
-    {
-        img: ark, 
-        subtitle: "Watch our latest video",
-        link: "https://www.youtube.com/embed?max-results=1&controls=1&rel=0&listType=user_uploads&list=NeebsGaming"
-    },
+    
     {
         img: sevenDays, 
-        subtitle: "Watch 7 Days to Die",
-        link: "https://www.youtube.com/playlist?list=PL1Uou2DWH7IFlBoE4m0kEIoufbNUXlF4b"
+        subtitle: "Watch 7 Days to Die: Cul-De-Sacked",
+        link: "https://www.youtube.com/playlist?list=PL1Uou2DWH7IGZvgCP5VpYopOYg7AUwgSU"
     },
     {
         img: bFF, 
